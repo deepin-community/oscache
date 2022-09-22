@@ -1,0 +1,24 @@
+--- a/src/java/com/opensymphony/oscache/base/Cache.java
++++ b/src/java/com/opensymphony/oscache/base/Cache.java
+@@ -356,8 +356,8 @@
+      * @since 2.4
+      */
+     public void addCacheEventListener(CacheEventListener listener) {
+-        // listenerList.add(CacheEventListener.class, listener);
+-        listenerList.add(listener.getClass(), listener);
++        listenerList.add(CacheEventListener.class, listener);
++        //listenerList.add(listener.getClass(), listener);
+     }
+     
+     /**
+@@ -669,8 +669,8 @@
+      * @since 2.4
+      */
+     public void removeCacheEventListener(CacheEventListener listener) {
+-        // listenerList.remove(CacheEventListener.class, listener);
+-        listenerList.remove(listener.getClass(), listener);
++        listenerList.remove(CacheEventListener.class, listener);
++        //listenerList.remove(listener.getClass(), listener);
+     }
+ 
+     /**

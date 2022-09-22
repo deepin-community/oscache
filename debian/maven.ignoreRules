@@ -1,0 +1,12 @@
+
+groboutils groboutils-core * * * *
+httpunit httpunit * * * *
+junit junit * * * *
+junitperf junitperf * * * *
+org.apache.maven.plugins maven-changes-plugin * * * *
+org.apache.maven.plugins maven-idea-plugin * * * *
+org.apache.maven.plugins maven-javadoc-plugin * * * *
+org.apache.maven.plugins maven-project-info-reports-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.codehaus.mojo cobertura-maven-plugin * * * *
+org.codehaus.mojo jxr-maven-plugin * * * *

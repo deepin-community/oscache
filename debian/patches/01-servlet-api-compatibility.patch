@@ -1,0 +1,31 @@
+Description: Fix the compatibility with the latest version of the Servlet API
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: no
+--- a/src/java/com/opensymphony/oscache/web/filter/SplitServletOutputStream.java
++++ b/src/java/com/opensymphony/oscache/web/filter/SplitServletOutputStream.java
+@@ -91,4 +91,9 @@
+         passThroughStream.close();
+     }    
+ 
++    public void setWriteListener(javax.servlet.WriteListener writeListener) { }
++
++    public boolean isReady() {
++        return true;
++    }
+ }
+--- a/pom.xml
++++ b/pom.xml
+@@ -271,6 +271,13 @@
+             <groupId>javax.servlet</groupId>
+             <artifactId>servlet-api</artifactId>
+             <version>2.3</version>
++            <scope>provided</scope>
++        </dependency>
++        <dependency>
++            <groupId>javax.servlet.jsp</groupId>
++            <artifactId>javax.servlet.jsp-api</artifactId>
++            <version>2.3</version>
++            <scope>provided</scope>
+         </dependency>
+         <dependency>
+             <groupId>jgroups</groupId>

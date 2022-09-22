@@ -1,0 +1,107 @@
+oscache (2.4.1+ds1-7) unstable; urgency=medium
+
+  * Team upload.
+  * Depend on libgeronimo-jms-1.1-spec-java instead of glassfish-javaee
+  * Standards-Version updated to 4.1.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Thu, 30 Nov 2017 02:08:30 +0100
+
+oscache (2.4.1+ds1-6) unstable; urgency=medium
+
+  * Team upload.
+  * Address FTBFS due to generification
+    Also see: https://bugs.openjdk.java.net/browse/JDK-6184376
+  * Use debhelper and compat level 10
+  * Bump Standards-Version to 4.0.0
+  * Update debian/watch to point to bitbucket upstream repo
+
+ -- tony mancill <tmancill@debian.org>  Sun, 06 Aug 2017 14:16:33 -0700
+
+oscache (2.4.1+ds1-5) unstable; urgency=medium
+
+  * Team upload.
+  * Transition to the Servlet API 3.1
+  * Build with maven-debian-helper instead of Ant
+  * Standards-Version updated to 3.9.8 (no changes)
+  * Moved the package to Git
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 03 Jun 2016 16:26:31 +0200
+
+oscache (2.4.1+ds1-4) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    - Build depend on libservlet3.0-java
+    - Standards-Version updated to 3.9.5 (no changes)
+    - Use canonical URLs for the Vcs-* fields
+  * Switch to debhelper level 9
+  * debian/rules: Improved the clean target
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Sun, 07 Sep 2014 23:36:25 +0200
+
+oscache (2.4.1+ds1-3) unstable; urgency=low
+
+  * Team upload.
+  * Update list of needed jar files to build. (Closes: #653520).
+  * Bump Standards-Version to 3.9.2. No changes were required.
+  * Drop unneeded dependencies on default-jre-headless | java2-runtime-headless
+    for binary package.
+  * Set versioned dependency on libjgroups-java (>= 2.12.2.Final).
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Wed, 28 Dec 2011 22:05:55 -0430
+
+oscache (2.4.1+ds1-2) unstable; urgency=low
+
+  * Update Build-Depends: libservlet2.5-java.
+  * Patch pom.xml for libservlet2.5-java.
+  * Make sure the package builds with both hibernate 3.3 and 3.5.
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 22 Jun 2010 21:30:27 +0200
+
+oscache (2.4.1+ds1-1) unstable; urgency=low
+
+  [ Varun Hiremath ]
+  * Set java source to 1.4 in d/ant.properties instead of d/rules
+
+  [ Torsten Werner ]
+  * Remove Kalle from uploaders list.
+  * Create orig tarball from SVN tag.
+  * Add POM file.
+
+ -- Torsten Werner <twerner@debian.org>  Fri, 21 May 2010 10:02:53 +0200
+
+oscache (2.4.1+dak1-2) unstable; urgency=low
+
+  * Update my email address
+  * Bump Standards-Version to 3.8.4
+  * Change Section to java
+  * Switch to default-jdk
+  * Switch to source format 3.0
+  * Set source version to 1.4 in debian/rules
+
+ -- Varun Hiremath <varun@debian.org>  Sun, 11 Apr 2010 01:55:34 -0400
+
+oscache (2.4.1+dak1-1) unstable; urgency=low
+
+  * Move package to main.
+  * Bump up Standards-Version: 3.8.0 (no changes).
+
+ -- Torsten Werner <twerner@debian.org>  Tue, 18 Nov 2008 22:00:40 +0100
+
+oscache (2.4.1-1) unstable; urgency=low
+
+  [ Varun Hiremath ]
+  * new upstream release
+  * Import package into pkg-java on svn.debian.org.
+  * Update Maintainer and Uploaders.
+
+  [ Torsten Werner ]
+  * Move package to contrib because it Build-Depends: libhibernate3-java.
+
+ -- Torsten Werner <twerner@debian.org>  Sun, 11 Nov 2007 19:12:52 +0100
+
+oscache (2.0.2-1) unstable; urgency=low
+
+  * Initial version.
+
+ -- Kalle Kivimaa <killer@debian.org>  Fri, 13 Aug 2004 14:00:00 +0200

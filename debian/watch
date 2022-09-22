@@ -1,0 +1,7 @@
+version=4
+opts="dversionmangle=s/\+(dfsg|ds)$//;,\
+        uversionmangle=s/_/./g,\
+        dversionmangle=s/\+.*//,\
+        repacksuffix=+ds,\
+        repack,compression=gz" \
+  https://bitbucket.org/opensymphony/oscache/downloads/?tab=tags .*/v(\d\S+)\.tar\.gz
